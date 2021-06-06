@@ -1,7 +1,10 @@
 import React from 'react';
+import ExampleIndex from './example';
 
 export default function App() {
   return (
-    <h1>woowahan learning</h1>
+    <>
+      <ExampleIndex />
+    </>
   );
-};
+}

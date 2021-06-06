@@ -7,8 +7,16 @@ module.exports = {
     'plugin:react/recommended',
     'airbnb',
   ],
-  globals: {
+  globals: { /* 사용자가 추가하는 전역 변수 */
     context: 'readonly',
+    React: true,
+    mount: true,
+    mountWithRouter: true,
+    shallow: true,
+    shallowWithRouter: true,
+    expect: true,
+    jsdom: true,
+    JSX: true,
   },
   parser: '@typescript-eslint/parser',
   parserOptions: {
@@ -50,6 +58,7 @@ module.exports = {
     'comma-dangle': ['error', 'always-multiline'],
     'space-in-parens': ['error', 'never'],
     'block-spacing': 'error',
+    'no-unused-vars': 'off',
     'array-bracket-spacing': ['error', 'never'],
     'object-curly-spacing': ['error', 'always'],
     'key-spacing': ['error', { mode: 'strict' }],
@@ -58,5 +67,7 @@ module.exports = {
     'react/prop-types': 'off',
     'linebreak-style': 'off',
     'no-proto': 'off',
+    'react/jsx-props-no-spreading': 'off',
+    'react/destructuring-assignment': 'off',
   },
 };
